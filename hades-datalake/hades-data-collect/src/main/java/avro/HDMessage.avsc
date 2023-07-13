@@ -1,0 +1,14 @@
+{
+    "namespace": "com.hades.datalake.binlog.avro",
+    "type": "record",
+    "name": "HadesData",
+    "fields": [
+        {"name": "messageid", "type": "long"},
+        {"name": "database",  "type": "string"},
+        {"name": "tablename", "type": "string"},
+        {"name": "timestamp", "type": "long"},
+        {"name": "option", "type": "string"},
+        {"name":"source","type":[{"type":"map","values":["string","null"]},"null"]},
+        {"name":"current","type":[{"type":"map","values":["string","null"]},"null"]}
+    ]
+}
