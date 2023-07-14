@@ -12,7 +12,6 @@
         <module>hades-data-collect</module>
         <module>hades-writer-spark-kafka</module>
     </modules>
-
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
