@@ -6,6 +6,7 @@ package com.hades.datalake.binlog.Factory;
  * @date 2023/7/13 16:10
  */
 import com.github.shyiko.mysql.binlog.BinaryLogClient;
+import com.hades.datalake.binlog.listener.HadesEventListener;
 import com.hades.datalake.binlog.metastore.MysqlConnection;
 
 public class BinLogFactory {
@@ -29,8 +30,8 @@ public class BinLogFactory {
         return new BinaryLogClient(host,port,user,password);
     }
 
-    public RtfEventListener getEventListener(){
-        return new RtfEventListener();
+    public HadesEventListener getEventListener(){
+        return new HadesEventListener();
     }
 
    /*public Filter getFilter(){
